@@ -14,7 +14,7 @@ class SnacksTests(TestCase):
             name = 'Chips', purchaser = self.user, description = 'Crunchy')
 
     def test_string_representation(self):
-        self.assertEqual(str(self.movie), 'Chips')
+        self.assertEqual(str(self.snack), 'Chips / Purchaser: tester')
 
     def test_snack_name(self):
         self.assertEqual(f'{self.snack.name}', 'Chips')
